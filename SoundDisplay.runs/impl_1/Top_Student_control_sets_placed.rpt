@@ -1,0 +1,120 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 29 00:43:09 2020
+| Host         : Adam-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    49 |
+| Unused register locations in slices containing registers |   168 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           17 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            1 |
+|     10 |            1 |
+|     12 |            1 |
+|     14 |            3 |
+|    16+ |           24 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             248 |           46 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             270 |           39 |
+| Yes          | No                    | No                     |              56 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             482 |           77 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-----------------------------------+-------------------------------------+------------------+----------------+
+|            Clock Signal           |           Enable Signal           |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------------------------+-----------------------------------+-------------------------------------+------------------+----------------+
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[14]_i_2_n_0                   | led[14]_i_1_n_0                     |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[15]_i_2_n_0                   | led[15]_i_1_n_0                     |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[0]_i_2_n_0                    | led[0]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[10]_i_2_n_0                   | led[10]_i_1_n_0                     |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[12]_i_2_n_0                   | led[12]_i_1_n_0                     |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[5]_i_2_n_0                    | led[5]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[11]_i_2_n_0                   | led[11]_i_1_n_0                     |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[7]_i_2_n_0                    | led[7]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[1]_i_2_n_0                    | led[1]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[6]_i_2_n_0                    | led[6]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[8]_i_2_n_0                    | led[8]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[2]_i_2_n_0                    | led[2]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[9]_i_2_n_0                    | led[9]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[4]_i_2_n_0                    | led[4]_i_1_n_0                      |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[13]_i_2_n_0                   | led[13]_i_1_n_0                     |                1 |              2 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led[3]_i_2_n_0                    | led[3]_i_1_n_0                      |                1 |              2 |
+| ~clk6p25m_BUFG                    |                                   |                                     |                1 |              2 |
+|  CLK50KHZ/debounce_clk            |                                   |                                     |                1 |              4 |
+|  animation_CLK                    |                                   |                                     |                1 |              6 |
+|  clk6p25m_BUFG                    | virus_death_counter[3]_i_1_n_0    | virus_clock[18]_i_1_n_0             |                1 |              8 |
+|  CLK762HZ/CLK                     |                                   |                                     |                4 |             10 |
+|  clk6p25m_BUFG                    |                                   | display/oled_data_reg[13]           |                3 |             12 |
+|  clk6p25m_BUFG                    | sel                               | virus_clock[18]_i_1_n_0             |                3 |             14 |
+|  clk6p25m_BUFG                    | laser_end                         |                                     |                3 |             14 |
+|  clk6p25m_BUFG                    | megaman_health_counter[6]_i_1_n_0 | virus_clock[18]_i_1_n_0             |                3 |             14 |
+|  CLK762HZ/CLK                     | seg0                              | seg[7]_i_1_n_0                      |                2 |             16 |
+|  clk6p25m_BUFG                    | virus_counter[6]_i_2_n_0          | virus_counter[6]_i_1_n_0            |                3 |             16 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | led_count                         |                                     |                7 |             20 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | counter                           | led_count                           |                3 |             22 |
+|  CLK100MHZ_IBUF_BUFG              |                                   | sample_clock/counter[11]_i_1__0_n_0 |                3 |             22 |
+|  clk6p25m_BUFG                    | outer_laser_colour[7]_i_1_n_0     |                                     |                7 |             22 |
+| ~nolabel_line90/JB_MIC3_Pin4_OBUF |                                   |                                     |                3 |             24 |
+| ~nolabel_line87/J_MIC3_Pin4_OBUF  |                                   |                                     |                3 |             24 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | max2                              | max                                 |                3 |             24 |
+|  JB_MIC3_Pin1_OBUF_BUFG           | max[11]_i_2_n_0                   | max                                 |                3 |             24 |
+|  clk6p25m_BUFG                    |                                   |                                     |                9 |             30 |
+| ~clk6p25m_BUFG                    |                                   | CENTRE/ff1/CentreButton             |                5 |             34 |
+|  clk6p25m_BUFG                    | mario_health_clock[18]_i_1_n_0    | virus_clock[18]_i_1_n_0             |                5 |             38 |
+|  clk6p25m_BUFG                    | megaman_health_clock[18]_i_1_n_0  | virus_clock[18]_i_1_n_0             |                5 |             38 |
+|  clk6p25m_BUFG                    | virus_clock[18]_i_2_n_0           | virus_clock[18]_i_1_n_0             |                6 |             38 |
+| ~clk6p25m_BUFG                    | display/delay[0]_i_1_n_0          | CENTRE/ff1/CentreButton             |                5 |             40 |
+|  clk6p25m_BUFG                    | winCounter[22]_i_1_n_0            | virus_clock[18]_i_1_n_0             |                5 |             46 |
+|  CLK100MHZ_IBUF_BUFG              |                                   | JB_MIC3_Pin1_OBUF_BUFG              |                6 |             48 |
+|  clk6p25m_BUFG                    | gameover_counter[23]_i_1_n_0      | virus_clock[18]_i_1_n_0             |                6 |             48 |
+|  JB_MIC3_Pin1_OBUF_BUFG           |                                   |                                     |                7 |             50 |
+|  CLK100MHZ_IBUF_BUFG              |                                   | CLK762HZ/clear                      |                8 |             64 |
+| ~clk6p25m_BUFG                    | display/state                     | CENTRE/ff1/CentreButton             |                8 |             64 |
+| ~clk6p25m_BUFG                    |                                   | display/spi_word[39]_i_1_n_0        |               14 |             90 |
+|  CLK100MHZ_IBUF_BUFG              |                                   |                                     |               17 |             98 |
++-----------------------------------+-----------------------------------+-------------------------------------+------------------+----------------+
+
+
